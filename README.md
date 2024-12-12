@@ -10,41 +10,41 @@ With ZAIBTEN, you can automatically extract real-time product reviews, ratings, 
 
 # 📈 Real-Time Analytics
 ZAIBTEN goes beyond just scraping data — it analyzes and visualizes it for you! Once the data is scraped from e-commerce platforms like Amazon, eBay, and Yelp, ZAIBTEN processes it to generate detailed visualizations, graphs, and charts directly on your dashboard. These graphs display real-time insights, such as:
-•	Product ratings over time
-•	Sentiment analysis of customer reviews (positive, negative, neutral)
-•	Comparative analysis of different products or sellers
-•	Customer behavior and feedback trends
+1.	Product ratings over time
+2.	Sentiment analysis of customer reviews (positive, negative, neutral)
+3.	Comparative analysis of different products or sellers
+4.	Customer behavior and feedback trends
 This real-time data empowers businesses to make quick, data-driven decisions based on the latest customer feedback. 📉📊
 
 # 📧 Automated Email Reports
 ZAIBTEN integrates seamlessly with email automation, allowing you to automatically send detailed analysis reports to your email without manual effort. Once data is scraped and processed, ZAIBTEN generates a comprehensive report and sends it directly to your inbox. These reports include:
-•	Customer sentiment analysis
-•	Rating distribution and trends
-•	Product comparison and recommendations
-•	Visualized data with graphs and charts
+1.	Customer sentiment analysis
+2.	Rating distribution and trends
+3.	Product comparison and recommendations
+4.	Visualized data with graphs and charts
 By automating this process, ZAIBTEN ensures you stay up-to-date on the latest product reviews and insights. 📧💼
 
 # 🛠️ Tech Stack Breakdown:
-•	Node.js 🚀: High-performance JavaScript runtime for scalable backend services.
-•	MongoDB 🔒: NoSQL database to securely store massive volumes of scraped data.
-•	Flask & Python 🧠: For running advanced analytics, including NLP techniques and machine learning model training.
-•	Jupyter Notebooks 📚: Powerful tool for analyzing data and training models using Python.
-•	NLP (Natural Language Processing) 🌟: Processes customer reviews and extracts valuable insights like sentiment, trends, and product ratings.
-•	SMTP 📧: Email automation for sending reports, keeping you updated automatically.
+1.	Node.js 🚀: High-performance JavaScript runtime for scalable backend services.
+2.	MongoDB 🔒: NoSQL database to securely store massive volumes of scraped data.
+3.	Flask & Python 🧠: For running advanced analytics, including NLP techniques and machine learning model training.
+4.	Jupyter Notebooks 📚: Powerful tool for analyzing data and training models using Python.
+5.	NLP (Natural Language Processing) 🌟: Processes customer reviews and extracts valuable insights like sentiment, trends, and product ratings.
+6.	SMTP 📧: Email automation for sending reports, keeping you updated automatically.
 
 # 💼 Admin Panel
 ZAIBTEN comes with a user-friendly Admin Panel, giving you complete control over your data. From managing and analyzing scraped reviews to visualizing performance statistics and generating reports, everything is accessible from a single dashboard. With ZAIBTEN's Admin Panel, you can:
-•	Track real-time data scraping progress
-•	Visualize customer sentiment and feedback trends
-•	Compare reviews from different products, sellers, or platforms (Amazon, eBay, Yelp)
-•	Generate and export comprehensive reports for internal analysis or presentation
+1.	Track real-time data scraping progress
+2.	Visualize customer sentiment and feedback trends
+3.	Compare reviews from different products, sellers, or platforms (Amazon, eBay, Yelp)
+4.	Generate and export comprehensive reports for internal analysis or presentation
 
 # 🌐 Why Choose ZAIBTEN?
-•	Real-Time Data: Scrape the latest reviews and product ratings from e-commerce giants like Amazon, eBay, and Yelp.
-•	Powerful NLP: Sentiment analysis and customer feedback categorization based on positive, negative, and neutral reviews.
-•	Model Training: Train machine learning models on your scraped dataset to predict trends, customer behavior, and product success.
-•	Automated Email Reports: Get real-time reports sent directly to your inbox without the hassle of manual creation.
-•	Robust Admin Panel: An intuitive interface to manage your data and generate meaningful insights with ease.
+1.	Real-Time Data: Scrape the latest reviews and product ratings from e-commerce giants like Amazon, eBay, and Yelp.
+2.	Powerful NLP: Sentiment analysis and customer feedback categorization based on positive, negative, and neutral reviews.
+3.	Model Training: Train machine learning models on your scraped dataset to predict trends, customer behavior, and product success.
+4.	Automated Email Reports: Get real-time reports sent directly to your inbox without the hassle of manual creation.
+5.	Robust Admin Panel: An intuitive interface to manage your data and generate meaningful insights with ease.
 
 # 🧠 Customer Reviews Analysis Software: Deeper Dive
 ZAIBTEN is not just a web scraper; it’s a customer reviews analysis software built to help businesses and developers leverage user feedback for actionable insights. Here's how it works:
