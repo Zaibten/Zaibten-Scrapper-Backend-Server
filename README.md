@@ -1,9 +1,8 @@
 # 🚀 Introducing ZAIBTEN: Your All-in-One Web Scraping & Analysis Platform! 🚀
-![image](https://github.com/user-attachments/assets/a17752d1-6078-4689-b676-0a95596c416a)
-![image](https://github.com/user-attachments/assets/d4e322c8-48d6-43ec-82ad-a00f15d97087)
-![image](https://github.com/user-attachments/assets/812c046f-81af-4825-b187-6bdeeb0e54de)
-![image](https://github.com/user-attachments/assets/9ebca0c6-ab92-48d5-9eee-0ac1e468cea4)
-
+![image](https://github.com/user-attachments/assets/4781fc78-f95b-43fd-8d21-51cb2b106cd7)
+![image](https://github.com/user-attachments/assets/e31ae204-0c51-4ce6-9c82-b60ecae600f5)
+![image](https://github.com/user-attachments/assets/a1fb2252-0f50-47fa-95bc-9de3dcaf7fac)
+![image](https://github.com/user-attachments/assets/b0907003-a74c-4b65-9545-f124a532d4de)
 
 # 🔍 What is ZAIBTEN?
 ZAIBTEN is an advanced web scraping solution built with Node.js and MongoDB, designed to fetch real-time data from top platforms like Amazon, eBay, and Yelp. Through powerful Natural Language Processing (NLP), we analyze reviews and generate actionable insights. 📊
