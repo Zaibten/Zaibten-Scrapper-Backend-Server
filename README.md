@@ -1,4 +1,4 @@
-# 🚀 Introducing ZAIBTEN: Your All-in-One Web Scraping & Analysis Platform! 🚀
+# 🚀 Introducing ZAIBTEN: Your All-in-One Web Scraping & Analysis Platform For Customer Reviews Analysis! 🚀
 ![image](https://github.com/user-attachments/assets/4781fc78-f95b-43fd-8d21-51cb2b106cd7)
 ![image](https://github.com/user-attachments/assets/e31ae204-0c51-4ce6-9c82-b60ecae600f5)
 ![image](https://github.com/user-attachments/assets/a1fb2252-0f50-47fa-95bc-9de3dcaf7fac)
