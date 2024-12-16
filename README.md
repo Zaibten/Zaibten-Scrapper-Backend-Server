@@ -1,8 +1,5 @@
 # 🚀 Introducing ZAIBTEN: Your All-in-One Web Scraping & Analysis Platform For Customer Reviews Analysis! 🚀
-![image](https://github.com/user-attachments/assets/4781fc78-f95b-43fd-8d21-51cb2b106cd7)
-![image](https://github.com/user-attachments/assets/e31ae204-0c51-4ce6-9c82-b60ecae600f5)
-![image](https://github.com/user-attachments/assets/a1fb2252-0f50-47fa-95bc-9de3dcaf7fac)
-![image](https://github.com/user-attachments/assets/b0907003-a74c-4b65-9545-f124a532d4de)
+Join ZAIBTEN SCRAPPER today and unlock the power of web scraping, customer review analysis, sentiment analysis, and automated reporting. Leverage the power of AI and machine learning to drive your business decisions with confidence! 🔥
  
 # 🔍 What is ZAIBTEN?
 ZAIBTEN is a cutting-edge customer reviews analysis software powered by web scraping, Natural Language Processing (NLP), and machine learning. It is designed to scrape, analyze, and visualize customer feedback from major e-commerce and review platforms such as Amazon, eBay, and Yelp.
@@ -58,4 +55,12 @@ By analyzing customer reviews from multiple platforms, ZAIBTEN helps businesses 
 Join ZAIBTEN today and unlock the power of web scraping, customer review analysis, sentiment analysis, and automated reporting. Leverage the power of AI and machine learning to drive your business decisions with confidence! 🔥
 
 #WebScraping #DataScience #NLP #EmailAutomation #NodeJS #MongoDB #Flask #JupyterNotebook #AdminPanel #DataAnalysis #MachineLearning #CustomerSentimentAnalysis #ZAIBTEN #TechInnovation
+
+# 📸 Some Screenshots of the Project 🖼️✨
+![image](https://github.com/user-attachments/assets/4781fc78-f95b-43fd-8d21-51cb2b106cd7)
+![image](https://github.com/user-attachments/assets/e31ae204-0c51-4ce6-9c82-b60ecae600f5)
+![image](https://github.com/user-attachments/assets/a1fb2252-0f50-47fa-95bc-9de3dcaf7fac)
+![image](https://github.com/user-attachments/assets/b0907003-a74c-4b65-9545-f124a532d4de)
+
+
 
