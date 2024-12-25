@@ -20,8 +20,9 @@ app.get('/', (req, res) => {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Admin Login</title>
+      <title>Zaibten Admin Panel</title>
       <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+      <link rel="icon" href="assets/logo.png">
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
         * {
@@ -143,10 +144,16 @@ app.get('/', (req, res) => {
       </style>
     </head>
     <body>
+      <script>
+        // Check if user is already logged in
+        if (localStorage.getItem('loggedIn') === 'true') {
+          window.location.href = '/home'; // Redirect to home if logged in
+        }
+      </script>
       <div id="particles-js"></div>
       <div class="login-container">
         <img src="/assets/logo.png" alt="App Logo" class="logo">
-        <h1>Admin Login</h1>
+        <h1>Zaibten Admin</h1>
         <form action="/login" method="POST">
           <input type="text" name="username" placeholder="Username" required>
           <input type="password" name="password" placeholder="Password" required>
@@ -287,9 +294,10 @@ app.get('/home', async (req, res) => {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Admin Dashboard</title>
+      <title>Zaibten Admin Dashboard</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <link rel="icon" href="assets/logo.png">
       <style>
         body {
           font-family: 'Poppins', sans-serif;
