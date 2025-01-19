@@ -61,6 +61,8 @@ Join ZAIBTEN today and unlock the power of web scraping, customer review analysi
 ![image](https://github.com/user-attachments/assets/e31ae204-0c51-4ce6-9c82-b60ecae600f5)
 ![image](https://github.com/user-attachments/assets/a1fb2252-0f50-47fa-95bc-9de3dcaf7fac)
 ![image](https://github.com/user-attachments/assets/b0907003-a74c-4b65-9545-f124a532d4de)
+![image](https://github.com/user-attachments/assets/1ac238ca-a4b3-4dda-97b4-7c0ecd21b48c)
+![image](https://github.com/user-attachments/assets/7f452852-d22f-4f46-850d-96348a6ad687)
 
 
 
