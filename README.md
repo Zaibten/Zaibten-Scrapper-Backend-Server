@@ -57,9 +57,11 @@ Join ZAIBTEN today and unlock the power of web scraping, customer review analysi
 #WebScraping #DataScience #NLP #EmailAutomation #NodeJS #MongoDB #Flask #JupyterNotebook #AdminPanel #DataAnalysis #MachineLearning #CustomerSentimentAnalysis #ZAIBTEN #TechInnovation
 
 # 📸 Some Screenshots of the Project 🖼️✨
-![image](https://github.com/user-attachments/assets/1ac238ca-a4b3-4dda-97b4-7c0ecd21b48c)
-![image](https://github.com/user-attachments/assets/7f452852-d22f-4f46-850d-96348a6ad687)
-![image](https://github.com/user-attachments/assets/b0907003-a74c-4b65-9545-f124a532d4de)
+![image](https://github.com/user-attachments/assets/3c55d861-ac57-481e-8cbe-ebe5790ea98f)
+![image](https://github.com/user-attachments/assets/4641c1aa-173c-4e93-9317-773d8c162071)
+![image](https://github.com/user-attachments/assets/6633a116-24be-4ebe-b3c4-0d59a9d95c1e)
+![image](https://github.com/user-attachments/assets/c37fa1a2-c950-4f0d-b9b9-e200a20765a1)
+
 
 
 
