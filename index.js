@@ -20,8 +20,9 @@ app.get('/', (req, res) => {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Admin Login</title>
+      <title>Zaibten Admin Panel</title>
       <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+      <link rel="icon" href="assets/logo.png">
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
         * {
@@ -35,7 +36,7 @@ app.get('/', (req, res) => {
           justify-content: center;
           align-items: center;
           height: 100vh;
-          background: #000;
+          background: linear-gradient(45deg, #000, #555);
           color: #fff;
           overflow: hidden;
         }
@@ -143,10 +144,15 @@ app.get('/', (req, res) => {
       </style>
     </head>
     <body>
-      <div id="particles-js"></div>
+      <script>
+        // Check if user is already logged in
+        if (localStorage.getItem('loggedIn') === 'true') {
+          window.location.href = '/home'; // Redirect to home if logged in
+        }
+      </script>
       <div class="login-container">
         <img src="/assets/logo.png" alt="App Logo" class="logo">
-        <h1>Admin Login</h1>
+        <h1>Zaibten Admin</h1>
         <form action="/login" method="POST">
           <input type="text" name="username" placeholder="Username" required>
           <input type="password" name="password" placeholder="Password" required>
@@ -277,7 +283,7 @@ app.get('/home', async (req, res) => {
     <tr>
       <td>${user.name}</td>
       <td>${user.email}</td>
-      <td>${user.password}</td>
+      <td>******</td>
     </tr>
   `).join('');
 
@@ -287,9 +293,10 @@ app.get('/home', async (req, res) => {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Admin Dashboard</title>
+      <title>Zaibten Admin Dashboard</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <link rel="icon" href="assets/logo.png">
       <style>
         body {
           font-family: 'Poppins', sans-serif;
@@ -465,7 +472,8 @@ app.get('/home', async (req, res) => {
       <div class="sidebar">
         <div class="logo">Admin Panel</div>
         <ul>
-          <li>Dashboard</li>
+          <li><a href="/home">Dashboard</a></li>
+          <li><a href="/reviews">Reviews Data</a></li>
           <li><a href="/logout">Logout</a></li>
         </ul>
       </div>
@@ -623,6 +631,264 @@ app.get('/home', async (req, res) => {
 });
 
 
+
+app.get('/reviews', async (req, res) => {
+  async function fetchReviews() {
+    try {
+        await client.connect();
+        const db = client.db('Zaibten');
+        const reviewsCollection = db.collection('reviews');
+        const reviews = await reviewsCollection.find().toArray();
+        return reviews;
+    } catch (err) {
+        console.error('Error fetching reviews:', err);
+        return [];
+    }
+}
+
+const reviews = await fetchReviews();
+  
+
+  // Render the HTML with the fetched users
+  let userHTML = reviews.map(user => `
+   
+  `).join('');
+
+  res.send(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Zaibten Admin Dashboard</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <link rel="icon" href="assets/logo.png">
+      <style>
+        body {
+          font-family: 'Poppins', sans-serif;
+          margin: 0;
+          background-color: #f1f3f5;
+        }
+
+        .sidebar {
+          height: 100vh;
+          width: 250px;
+          position: fixed;
+          left: 0;
+          top: 0;
+          background: #1c1e26;
+          color: #fff;
+          padding: 20px;
+          transition: 0.3s;
+        }
+
+        .sidebar.collapsed {
+          width: 80px;
+        }
+
+        .sidebar .logo {
+          font-size: 24px;
+          text-align: center;
+          margin-bottom: 20px;
+          font-weight: bold;
+        }
+
+        .sidebar ul {
+          padding: 0;
+          list-style-type: none;
+        }
+
+        .sidebar ul li {
+          padding: 15px;
+          text-align: left;
+          cursor: pointer;
+          color: #b3b3b3;
+          transition: 0.3s;
+        }
+
+        .sidebar a {
+          text-decoration: none;
+          color: #b3b3b3;
+          transition: 0.3s;
+        }
+
+        .sidebar ul li:hover {
+          background-color: #2c2f38;
+          color: white;
+        }
+
+        .content {
+          margin-left: 250px;
+          padding: 20px;
+          transition: 0.3s;
+        }
+
+        .content.collapsed {
+          margin-left: 80px;
+        }
+
+        .navbar {
+          background: #ffffff;
+          color: #495057;
+          padding: 15px;
+          border-bottom: 1px solid #dee2e6;
+        }
+
+        .card {
+          background-color: #fff;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          border: none;
+          border-radius: 10px;
+          padding: 20px;
+          color: #495057;
+          transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+          transform: translateY(-5px);
+          background-color: #e9ecef;
+        }
+
+        .table-container {
+          margin-top: 30px;
+          overflow-x: auto;
+          border-radius: 10px;
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          border-radius: 10px;
+          overflow: hidden;
+        }
+
+        th, td {
+          padding: 12px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+        }
+
+        th {
+          background-color: #2c3e50;
+          color: black;
+        }
+
+        tr:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+
+        tr:hover {
+          background-color: #f1f1f1;
+        }
+
+        .table-container {
+          max-height: 400px;
+          overflow-y: auto;
+          display: block;
+        }
+
+        .table-container table {
+          width: 100%;
+          table-layout: fixed;
+        }
+
+        .table-container table th, .table-container table td {
+          word-wrap: break-word;
+        }
+
+        /* Custom Edit and Delete Icons */
+        .edit-icon,
+        .delete-icon {
+          font-size: 20px;
+          padding: 8px;
+          cursor: pointer;
+          border-radius: 4px;
+          margin-right: 10px;
+          transition: background-color 0.3s;
+        }
+
+        .edit-icon {
+          color: #4CAF50;
+        }
+
+        .edit-icon:hover {
+          background-color: #e8f5e9;
+        }
+
+        .delete-icon {
+          color: #f44336;
+        }
+
+        .delete-icon:hover {
+          background-color: #ffebee;
+        }
+
+        @media (max-width: 768px) {
+          .sidebar {
+            width: 80px;
+          }
+
+          .content {
+            margin-left: 80px;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="sidebar">
+        <div class="logo">Admin Panel</div>
+        <ul>
+          <li><a href="/home">Dashboard</a></li>
+          <li><a href="/reviews">Reviews Data</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="navbar">Reviews Data</div>
+        <div class="container mt-4">
+          </div>
+<hr>
+          <br>
+          <div class="row">
+            <div class="col-12">
+              <h4>Reviews Data</h4>
+              <div class="table-container">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>User Email</th>
+                      <th>Good Reviews</th>
+                      <th>Bad Reviews</th>
+                      <th>Neutral Reviews</th>
+                      <th>Recommandation</th>
+                      <th>Name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${reviews.map(review => `
+                <tr>
+                    <td>${review.user_email}</td>
+                    <td>${review.good_reviews}</td>
+                    <td>${review.bad_reviews}</td>
+                    <td>${review.neutral_reviews}</td>
+                    <td>${review.recommendation}</td>
+                    <td>${review.product_name}</td>
+                </tr>`).join('')}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          <br>
+
+          
+    </body>
+    </html>
+  `);
+});
 
 
 // Logout Route
