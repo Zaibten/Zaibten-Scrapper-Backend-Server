@@ -284,6 +284,7 @@ app.get('/home', async (req, res) => {
       <td>${user.name}</td>
       <td>${user.email}</td>
       <td>******</td>
+      <td>${user.created_at}</td>
     </tr>
   `).join('');
 
@@ -518,6 +519,7 @@ app.get('/home', async (req, res) => {
                       <th>Name</th>
                       <th>Email</th>
                       <th>Password</th>
+                      <th>Date Created</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -863,6 +865,7 @@ const reviews = await fetchReviews();
                       <th>Neutral Reviews</th>
                       <th>Recommandation</th>
                       <th>Name</th>
+                      <th>Date Created</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -874,6 +877,7 @@ const reviews = await fetchReviews();
                     <td>${review.neutral_reviews}</td>
                     <td>${review.recommendation}</td>
                     <td>${review.product_name}</td>
+                    <td>${review.created_at}</td>
                 </tr>`).join('')}
                   </tbody>
                 </table>
